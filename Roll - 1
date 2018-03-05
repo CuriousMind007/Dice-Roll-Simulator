@@ -1,0 +1,30 @@
+import random
+from PIL import Image
+
+import tkinter # a pop-up box will be created where we can take the user input and display it back
+
+while True:
+    x = input("Want to roll the dice?(Yes/No)")
+    if x[0].lower() == 'y': #would address the issue if user decides to input "Yes" or "YES" or "y" or "YEs".
+        m = random.randrange(1, 7) #generates a random integer between 1 and 6
+        if m == 1:
+            print("The number on the dice is", m)#will be creating 
+        elif m == 2:
+            print("The number on the dice is", m)
+        elif m == 3:
+            print("The number on the dice is", m)
+        elif m == 4:
+            print("The number on the dice is", m)
+        elif m == 5:
+            print("The number on the dice is", m)
+        elif m == 6:
+            print("The number on the dice is", m)
+        else:
+            pass
+
+    if x[0].lower() == 'n': #would address the issue if user decides to input "NO" or "no" or "n" or "No" or "No".
+        print("Thank you for playing the game ")
+        break
+
+
+
